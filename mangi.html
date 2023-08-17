@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/mangi.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/header.css">
+    <title>Каталог манги.Читать мангу онлайн</title>
+</head>
+<body> 
+     <header>
+    <div class="header_wrapper">
+         <a href="./index.html"><img src="./icons/manga.png" alt=""></a>
+         <nav>
+             <ul>
+                <!-- <button id="btnCatalog" class="btnCatalog"><img src="./icons/icons8-меню-50.png" alt="">каталог<img src="./icons/arrow.png" alt=""><div id="list"></div></button> -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Каталог
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="./mangi.html">Манга</a>
+                      <a class="dropdown-item" href="./mangi.html">манхва</a>
+                      <a class="dropdown-item" href="./mangi.html">маньхуа</a>
+                      <a class="dropdown-item" href="./mangi.html">OEL-манги</a>
+                      <a class="dropdown-item" href="./mangi.html">Руманга</a>
+                      <a class="dropdown-item" href="./mangi.html">Комикс западный</a>
+                      <a class="dropdown-item" href="./mangi.html">Синглов</a>
+                      <a class="dropdown-item" href="./mangi.html">Весь</a>
+                      <a class="dropdown-item" href="./mangi.html">Случайный канал</a>
+                    </div>
+                  </div>
+                <button id="btnInput" onclick="createSearch()" class="btnInputBlock"><img src="./icons/icons8-поиск-50.png" alt="">поиск</button>
+                <div class="inputList" id="inputList"></div>
+                <!-- <div class="searchBlock" id="searchBlock"></div> -->
+                <li><a href="https://lib.social/forum/?category=all&title&user_id&subscription=0&page=1&sort=newest"><img src="./icons/icons8-message-48.png" alt="">Форум</a></li>
+                <!-- <li><a href=""><img src="./icons/icons8-помощь-30.png" alt="">FAQ</a></li> -->
+                <!-- <button class="dot" id="dot">...<div class="listDot" id="listDot"></div></button> -->
+                <!-- <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Другое
+                    </button> -->
+                    <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Новости</a>
+                      <a class="dropdown-item" href="#">Контакты</a>
+                      <a class="dropdown-item" href="#">Рандома</a>
+                    </div> -->
+                  <!-- </div> -->
+            </ul>
+         </nav>
+         <div class="header_info">
+            <button id="addTitle"><img src="./icons/icons8-ручка-67 (1).png" alt=""><div id="listAddTitle" class="listAddTitle"></div></button>
+            <!-- <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="./icons/icons8-ручка-67 (1).png" alt="">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"></a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div> -->
+            <button id="notification"><img src="./icons/icons8-колокол-24.png" alt=""><div id="listNotification" class="listNotificatio"></div></button>
+            <button>
+                <a href="./favourites.html"><img src="./icons/icons8-закладка-лента-48.png" alt=""></a>
+            </button>
+            <button class="img_aneme" id="profilePerson"><a href=""></a><img src="https://steamuserimages-a.akamaihd.net/ugc/937180298418598156/35C84783ED1F2126EE0EC84FD4AE5416E5286BCE/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt=""><div id="profileList" class="profileList"></div></button>
+         </div>
+    </div>
+</header>
+
+    <main>
+        <div class="about">
+            <div class="left">
+                <div class="left_info">
+                    <h2>Каталог манхвы</h2>
+                    <!-- <button><img src="./icons/icons8-меню-50 (2).png" alt=""> По количеству оценок <img src="./icons/icons8-развернуть-50.png" alt=""></button> -->
+                 </div>
+                 <input type="text" placeholder="Поиск по названию" id="mangiInp">
+                 <div class= "cards" id="infoBlock">
+                  <!-- <div class="popular_card">
+                      <div class="popular_card--info">
+                          <a href=""><img src="./images/XXE0vhlR4bGs_250x350.jpg" alt=""></a>
+                          <div class="bg">
+                              <p>Том 1 Глава 55</p>
+                          </div>
+                     </div>
+                     <a href="">title</a>
+                  </div>  
+                  <div class="popular_card">
+                      <div class="popular_card--info">
+                          <a href=""><img src="./images/XXE0vhlR4bGs_250x350.jpg" alt=""></a>
+                          <div class="bg">
+                              <p>Том 1 Глава 55</p>
+                          </div>
+                     </div>
+                     <a href="">title</a>
+                  </div>  
+                  <div class="popular_card">
+                      <div class="popular_card--info">
+                          <a href=""><img src="./images/XXE0vhlR4bGs_250x350.jpg" alt=""></a>
+                          <div class="bg">
+                              <p>Том 1 Глава 55</p>
+                          </div>
+                     </div>
+                     <a href="">title</a>
+                  </div>  
+                  <div class="popular_card">
+                      <div class="popular_card--info">
+                          <a href=""><img src="./images/XXE0vhlR4bGs_250x350.jpg" alt=""></a>
+                          <div class="bg">
+                              <p>Том 1 Глава 55</p>
+                          </div>
+                     </div>
+                     <a href="">title</a>
+                  </div>  
+                  <div class="popular_card">
+                      <div class="popular_card--info">
+                          <a href=""><img src="./images/XXE0vhlR4bGs_250x350.jpg" alt=""></a>
+                          <div class="bg">
+                              <p>Том 1 Глава 55</p>
+                          </div>
+                     </div>
+                     <a href="">title</a>
+                  </div>  
+                  <div class="popular_card">
+                      <div class="popular_card--info">
+                          <a href=""><img src="./images/XXE0vhlR4bGs_250x350.jpg" alt=""></a>
+                          <div class="bg">
+                              <p>Том 1 Глава 55</p>
+                          </div>
+                     </div>
+                     <a href="">title</a>
+                  </div>   -->
+          
+          </div>
+                 
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="them">
+                <h2>Тема сайта</h2>
+                <button>A</button>
+                <button>A</button>
+            </div>
+            <p>В случаях нарушения авторских прав - обращайтесь на почту info@mangalib.me</p>
+             <ul>
+                <li><a href="">Обратная связь</a></li>
+                <li><a href=""> Для правообладателей </a></li>
+                <li><a href=""> Пользовательское соглашение </a></li>
+                <li><a href=""> DMCA </a></li>
+                <li><a href=""> Каталог манги </a></li>
+                <li><a href=""> Лицензия</a></li>
+             </ul>
+        </div>
+    </footer>
+    <script src="./mangi.js"></script>
+    <script src="./setType.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

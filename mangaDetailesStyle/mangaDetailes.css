@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Montserrat:ital,wght@0,200;0,400;0,700;1,500&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,300;1,500;1,700&family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  max-width: 1536px;
+  background: #1b1b1b;
+}
+main .mnagaDetailsWrapper {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-left: 200px;
+  padding-top: 20px;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right {
+  background: #212529;
+  width: 250px;
+  border: none;
+  border-radius: 4px;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right img {
+  width: 250px;
+  border-radius: 4px;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 15px;
+  align-items: center;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .buttons .green-button {
+  background: green;
+  color: white;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .buttons button {
+  margin: 0 auto;
+  width: 240px;
+  border: none;
+  background: #ffa332;
+  color: #ffffff;
+  padding: 5px 16px;
+  border-radius: 4px;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .buttons button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .buttons button:hover {
+  background: #dd8417;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .buttons button:nth-child(2) {
+  border: none;
+  background: #63cb63;
+  color: #ffffff;
+  padding: 5px 16px;
+  border-radius: 4px;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .buttons button:nth-child(2):hover {
+  background: #54bc54;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock {
+  padding: 10px;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .type {
+  border: none;
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .type p:nth-child(1) {
+  margin: 0;
+  font-size: 12px;
+  color: #4d575e;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .type p:nth-child(2) {
+  color: #ffffff;
+  margin: 0;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .type:hover {
+  background: #37434b;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .format_relis {
+  border: none;
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .format_relis p:nth-child(1) {
+  margin: 0;
+  font-size: 12px;
+  color: #4d575e;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .format_relis p:nth-child(2) {
+  margin: 0;
+  color: #ffffff;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .format_relis:hover {
+  background: #37434b;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .year_relis {
+  border: none;
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .year_relis p:nth-child(1) {
+  margin: 0;
+  font-size: 12px;
+  color: #4d575e;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .year_relis p:nth-child(2) {
+  margin: 0;
+  color: #ffffff;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .year_relis:hover {
+  background: #37434b;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .status_title {
+  border: none;
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .status_title p:nth-child(1) {
+  margin: 0;
+  font-size: 12px;
+  color: #4d575e;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .status_title p:nth-child(2) {
+  margin: 0;
+  color: #ffffff;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .status_title:hover {
+  background: #37434b;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .authorBlock {
+  border: none;
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .authorBlock p:nth-child(1) {
+  margin: 0;
+  font-size: 12px;
+  color: #4d575e;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .authorBlock p:nth-child(2) {
+  margin: 0;
+  color: #ffffff;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .authorBlock:hover {
+  background: #37434b;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .artistBlock {
+  border: none;
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .artistBlock p:nth-child(1) {
+  margin: 0;
+  font-size: 12px;
+  color: #4d575e;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .artistBlock p:nth-child(2) {
+  margin: 0;
+  color: #ffffff;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .artistBlock:hover {
+  background: #37434b;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .publisherBlock {
+  border: none;
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .publisherBlock p:nth-child(1) {
+  margin: 0;
+  font-size: 12px;
+  color: #4d575e;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .publisherBlock p:nth-child(2) {
+  margin: 0;
+  color: #ffffff;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .publisherBlock:hover {
+  background: #37434b;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .chapters {
+  border: none;
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .chapters p:nth-child(1) {
+  margin: 0;
+  font-size: 12px;
+  color: #4d575e;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .chapters p:nth-child(2) {
+  margin: 0;
+  color: #ffffff;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .chapters:hover {
+  background: #37434b;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .alt_Name {
+  border: none;
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .alt_Name p:nth-child(1) {
+  margin: 0;
+  font-size: 12px;
+  color: #4d575e;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .alt_Name p:nth-child(2) {
+  margin: 0;
+  color: #ffffff;
+}
+main .mnagaDetailsWrapper .mnaga_Details-right .infoBlock .alt_Name:hover {
+  background: #37434b;
+}
+main .mnagaDetailsWrapper .mnaga_Details-left h2 {
+  color: #ffffff;
+}
+main .mnagaDetailsWrapper .mnaga_Details-left p {
+  color: #ffffff;
+}
+main .mnagaDetailsWrapper .mnaga_Details-left .info_Title {
+  background: #212529;
+  width: 890px;
+  padding: 12px;
+}
+main .mnagaDetailsWrapper .mnaga_Details-left .info_Title button {
+  border: none;
+  background: #212529;
+  color: #ffffff;
+  padding-bottom: 7px;
+  border-bottom: 2px solid #ffa332;
+  align-items: center;
+}
+main .mnagaDetailsWrapper .mnaga_Details-left .info_Title .buttons_geners {
+  border: 1px solid #4d575e;
+  background: #323a3f;
+  padding: 3px;
+}
+main .mnagaDetailsWrapper .mnaga_Details-left .info_Title .buttons_geners a {
+  color: #ffffff;
+  text-decoration: none;
+}
+main .mnagaDetailsWrapper .mnaga_Details-left .info_Title .translators {
+  padding-top: 10px;
+}
+main .mnagaDetailsWrapper .mnaga_Details-left .info_Title .translators button {
+  border: 1px solid #4d575e;
+  background: #323a3f;
+  padding: 0 7px;
+}
+main .mnagaDetailsWrapper .mnaga_Details-left .info_Title .translators button a {
+  color: #ffffff;
+}/*# sourceMappingURL=mangaDetailes.css.map */

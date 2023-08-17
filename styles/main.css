@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Montserrat:ital,wght@0,200;0,400;0,700;1,500&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,300;1,500;1,700&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url(./header.css);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  max-width: 1536px;
+  background: #1b1b1b;
+  padding-top: 20px;
+  padding-left: 180px;
+}
+main .about_block {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+main .about_block .left .popular_cards {
+  background: #212529;
+  width: 860px;
+  border: none;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(6, footer);
+}
+main .about_block .left .popular_cards h2 {
+  color: #f2f2f3;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 7px;
+}
+main .about_block .left .popular_cards .cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 12px;
+}
+main .about_block .left .popular_cards .cards .popular_card {
+  width: 130px;
+}
+main .about_block .left .popular_cards .cards .popular_card .popular_card-info {
+  position: relative;
+}
+main .about_block .left .popular_cards .cards .popular_card .popular_card-info img {
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+}
+main .about_block .left .popular_cards .cards .popular_card .popular_card-info .bg {
+  background: linear-gradient(360deg, rgb(2, 0, 36) 0%, rgba(0, 0, 0, 0.5663515406) 50%, rgba(0, 0, 0, 0) 100%);
+  content: "";
+  z-index: 5;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+}
+main .about_block .left .popular_cards .cards .popular_card .popular_card-info p {
+  width: 100%;
+  bottom: -15px;
+  left: 5px;
+  position: absolute;
+  z-index: 10;
+  color: #f2f2f3;
+  text-shadow: #000 1px 0 100px;
+}
+main .about_block .left .popular_cards .cards .popular_card a {
+  text-decoration: none;
+  color: #f2f2f3;
+}
+main .about_block .left .popular_cards .cards .popular_card a:hover {
+  color: #ffa332;
+  text-decoration: underline;
+}
+main .about_block .left .last_news-wrapper {
+  display: flex;
+  gap: 20px;
+}
+main .about_block .left .last_news-wrapper .last_news {
+  margin-top: 20px;
+  width: 420px;
+  background: #212529;
+  border: none;
+  border-radius: 5px;
+}
+main .about_block .left .last_news-wrapper .last_news h2 {
+  color: #f2f2f3;
+  font-size: 18px;
+  font-weight: 300;
+}
+main .about_block .left .last_news-wrapper .last_news img {
+  width: 20px;
+}
+main .about_block .left .last_news-wrapper .last_news nav li {
+  list-style: none;
+}
+main .about_block .left .last_news-wrapper .last_news nav li a {
+  text-decoration: none;
+  color: #f2f2f3;
+}
+main .about_block .left .last_news-wrapper .last_news nav li a:hover {
+  color: #ffa332;
+  text-decoration: underline;
+}
+main .about_block .left .last_news-wrapper .last_news nav p {
+  color: #868e96;
+}
+main .about_block .left .last_news-wrapper .last_news nav .help_people {
+  display: flex;
+  flex-direction: row;
+  gap: 110px;
+  padding: 5px;
+}
+main .about_block .left .last_news-wrapper .last_news nav .help_people button {
+  width: 216px;
+  background: #6f42c1;
+  border: none;
+  border-radius: 8px;
+  align-items: center;
+}
+main .about_block .left .last_news-wrapper .last_news nav .help_people button a {
+  text-decoration: none;
+  color: #f2f2f3;
+  font-size: 12px;
+  text-align: center;
+}
+main .about_block .left .new_chapters {
+  margin-top: 20px;
+  width: 860px;
+  background: #212529;
+  border: none;
+  border-radius: 5px;
+  display: grid;
+}
+main .about_block .left .new_chapters-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #868e96;
+}
+main .about_block .left .new_chapters-info h2 {
+  color: #f2f2f3;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 7px;
+}
+main .about_block .left .new_chapters-info .new-buttons {
+  padding: 7px;
+}
+main .about_block .left .new_chapters-info .new-buttons button {
+  font-size: 14px;
+  border: none;
+  background: #212529;
+  color: #868e96;
+  transition: 0.2s ease-in-out;
+}
+main .about_block .left .new_chapters-info .new-buttons button:hover {
+  color: #f2f2f3;
+}
+main .about_block .left .new_chapters .new_chapter-cards .new_chapter-card {
+  width: 860px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #31373d;
+}
+main .about_block .left .new_chapters .new_chapter-cards .new_chapter-card .img-bg {
+  position: relative;
+  display: flex;
+}
+main .about_block .left .new_chapters .new_chapter-cards .new_chapter-card .img-bg img {
+  width: 130px;
+}
+main .about_block .left .new_chapters .new_chapter-cards .new_chapter-card .img-bg p {
+  position: absolute;
+  top: 0px;
+  left: 42px;
+  color: #f2f2f3;
+}
+main .about_block .left .new_chapters .new_chapter-cards .new_chapter-card .img-bg .bg {
+  background: linear-gradient(180deg, rgb(2, 0, 36) 0%, rgba(0, 0, 0, 0.5663515406) 50%, rgba(0, 0, 0, 0) 100%);
+  content: "";
+  z-index: 5;
+  top: 0px;
+  left: 0px;
+  width: 130px;
+  height: 100px;
+  position: absolute;
+}
+main .about_block .left .new_chapters .new_chapter-cards .new_chapter-card .new_chapter-info {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+main .about_block .left .new_chapters .new_chapter-cards .new_chapter-card .new_chapter-info a {
+  text-decoration: none;
+  color: #fff;
+}
+main .about_block .left .new_chapters .new_chapter-cards .new_chapter-card .new_chapter-info a:hover {
+  color: #ffa332;
+  text-decoration: underline;
+}
+main .about_block .left .new_chapters .new_chapter-cards .new_chapter-card .new_chapter-info .div {
+  display: flex;
+  justify-content: space-between;
+}
+main .about_block .left .new_chapters .new_chapter-cards .new_chapter-card .new_chapter-info .div a {
+  color: #212529;
+}
+main .about_block .left .new_chapters .new_chapter-cards .new_chapter-card .new_chapter-info .div P {
+  color: #868e96;
+}
+main .about_block .left .new_chapters .new_chapter-cards .new_chapter-card .new_chapter-info .div a {
+  color: #868e96;
+}
+main .about_block .left .new_chapters .new_chapter-cards .new_chapter-card .new_chapter-info .div a:hover {
+  color: #f2f2f3;
+}
+main .about_block .left .new_chapters .new_chapter-cards .new_chapter-card .new_chapter-info button {
+  background: #31373d;
+  border: none;
+  border-top: 1px solid #ffa332;
+  text-align: start;
+  border-radius: 2px;
+}
+main .about_block .left .new_chapters .new_chapter-cards .new_chapter-card .new_chapter-info button a {
+  color: #f2f2f3;
+  font-size: 15px;
+  font-weight: 400;
+}
+main .about_block .left .new_chapters .new_chapter-cards .new_chapter-card .new_chapter-info button a:hover {
+  color: #ffa332;
+}
+main .about_block .right .geners {
+  background: #212529;
+  width: 285px;
+  border: none;
+  border-radius: 5px;
+  border-bottom: #ffa332;
+}
+main .about_block .right .geners .logo {
+  border-bottom: 2px solid #ffa332;
+}
+main .about_block .right .geners .logo h2 {
+  padding: 13px;
+  color: #f2f2f3;
+  font-size: 18px;
+  font-weight: 300;
+}
+main .about_block .right .geners .generBlock {
+  padding-top: 14px;
+}
+main .about_block .right .geners .generBlock button {
+  background: #31373d;
+  border: none;
+  padding: 2px;
+  border-radius: 2px;
+}
+main .about_block .right .geners .generBlock button a {
+  text-decoration: none;
+  color: #f2f2f3;
+}
+main .about_block .right .geners .generBlock button a:hover {
+  color: #ffa332;
+}
+main .about_block .right .geners .expand {
+  padding-left: 85px;
+}
+main .about_block .right .geners .expand button {
+  border: none;
+  background: #212529;
+  color: #868e96;
+  font-size: 14px;
+}
+main .about_block .right .geners .expand button:hover {
+  color: #ffa332;
+}
+main .about_block .right .geners .expand button img {
+  width: 12px;
+}
+main .about_block .right .categories {
+  background: #212529;
+  width: 285px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 12px;
+  border-bottom: #ffa332;
+}
+main .about_block .right .categories .logo {
+  border-bottom: 2px solid #ffa332;
+}
+main .about_block .right .categories .logo h2 {
+  color: #f2f2f3;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 12px;
+}
+main .about_block .right .categories .categoriesBlock {
+  padding: 12px;
+}
+main .about_block .right .categories .categoriesBlock button {
+  background: #31373d;
+  border: none;
+  padding: 2px;
+  border-radius: 2px;
+}
+main .about_block .right .categories .categoriesBlock button a {
+  text-decoration: none;
+  color: #f2f2f3;
+}
+main .about_block .right .categories .categoriesBlock button a:hover {
+  color: #ffa332;
+}
+main .about_block .right .popular_manga {
+  margin-top: 12px;
+  width: 285px;
+  background: #212529;
+}
+main .about_block .right .popular_manga .popular_logo {
+  border-bottom: 2px solid #ffa332;
+}
+main .about_block .right .popular_manga .popular_logo h2 {
+  color: #f2f2f3;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 12px;
+}
+main .about_block .right .popular_manga .popular_cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 10px;
+}
+main .about_block .right .popular_manga .popular_cards .popular_card {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  border-bottom: 1px solid #868e96;
+  padding: 8px;
+}
+main .about_block .right .popular_manga .popular_cards .popular_card .popular_right img {
+  width: 80px;
+}
+main .about_block .right .popular_manga .popular_cards .popular_card .popular_left {
+  align-items: center;
+}
+main .about_block .right .popular_manga .popular_cards .popular_card .popular_left a {
+  color: #f2f2f3;
+  text-decoration: none;
+  font-size: 20px;
+}
+main .about_block .right .popular_manga .popular_cards .popular_card .popular_left a:hover {
+  color: #ffa332;
+}
+main .about_block .right .popular_manga .popular_cards .popular_card .popular_left p {
+  color: #868e96;
+  font-size: 12px;
+}
+main .about_block .right .popular_manga .popular_cards .popular_card .popular_left p img {
+  width: 13px;
+}
+main .about_block .right .popular_manga .popular_cards .popular_card-last {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 8px;
+}
+main .about_block .right .popular_manga .popular_cards .popular_card-last .popular_right img {
+  width: 80px;
+}
+main .about_block .right .popular_manga .popular_cards .popular_card-last .popular_left {
+  align-items: center;
+}
+main .about_block .right .popular_manga .popular_cards .popular_card-last .popular_left a {
+  color: #f2f2f3;
+  text-decoration: none;
+  font-size: 20px;
+}
+main .about_block .right .popular_manga .popular_cards .popular_card-last .popular_left a:hover {
+  color: #ffa332;
+}
+main .about_block .right .popular_manga .popular_cards .popular_card-last .popular_left p {
+  color: #868e96;
+  font-size: 12px;
+}
+main .about_block .right .popular_manga .popular_cards .popular_card-last .popular_left p img {
+  width: 13px;
+}
+main .about_block .right .new-manga {
+  margin-top: 12px;
+  width: 285px;
+  background: #212529;
+}
+main .about_block .right .new-manga .new_logo {
+  border-bottom: 2px solid #ffa332;
+}
+main .about_block .right .new-manga .new_logo h2 {
+  color: #f2f2f3;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 12px;
+}
+main .about_block .right .new-manga .new_cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 10px;
+}
+main .about_block .right .new-manga .new_cards .new_card {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  border-bottom: 1px solid #868e96;
+  padding: 8px;
+}
+main .about_block .right .new-manga .new_cards .new_card .new-right img {
+  width: 80px;
+}
+main .about_block .right .new-manga .new_cards .new_card .new-left a {
+  color: #f2f2f3;
+  text-decoration: none;
+  font-size: 20px;
+}
+main .about_block .right .new-manga .new_cards .new_card .new-left a:hover {
+  color: #ffa332;
+}
+main .about_block .right .new-manga .new_cards .new_card .new-left p {
+  color: #868e96;
+  font-size: 12px;
+}
+main .about_block .right .new-manga .new_cards .new_card-last {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+main .about_block .right .new-manga .new_cards .new_card-last .new-right img {
+  width: 80px;
+}
+main .about_block .right .new-manga .new_cards .new_card-last .new-left a {
+  color: #f2f2f3;
+  text-decoration: none;
+  font-size: 20px;
+}
+main .about_block .right .new-manga .new_cards .new_card-last .new-left a:hover {
+  color: #ffa332;
+}
+main .about_block .right .new-manga .new_cards .new_card-last .new-left p {
+  color: #868e96;
+  font-size: 12px;
+}/*# sourceMappingURL=main.css.map */

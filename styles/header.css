@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Montserrat:ital,wght@0,200;0,400;0,700;1,500&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,300;1,500;1,700&family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  max-width: 1536px;
+  background: #212529;
+}
+header .header_wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .header_wrapper nav {
+  padding-top: 20px;
+}
+header .header_wrapper nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+header .header_wrapper nav ul button {
+  width: 120px;
+  background: #212529;
+  padding: 10px;
+  border: none;
+  color: #f2f2f3;
+  font-size: 18px;
+  font-weight: 700;
+  transition: 0.2s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+header .header_wrapper nav ul button img {
+  width: 13px;
+}
+header .header_wrapper nav ul li {
+  list-style: none;
+  display: flex;
+  padding: 7px 7px;
+  transition: all 0.3s ease-in-out;
+}
+header .header_wrapper nav ul li:hover {
+  border: none;
+  border-radius: 2px;
+  background: #3f4448;
+}
+header .header_wrapper nav ul li a {
+  text-decoration: none;
+  color: #f2f2f3;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+header .header_wrapper nav ul li a img {
+  width: 13px;
+}
+header .header_wrapper .header_info button {
+  background: #212529;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  transition: all 0.2s ease-in-out;
+}
+header .header_wrapper .header_info button:hover {
+  background: #3f4448;
+}
+header .header_wrapper .header_info button img {
+  width: 20px;
+}
+header .header_wrapper .header_info button a img {
+  width: 20px;
+}
+header .header_wrapper .header_info button:nth-child(4) img {
+  width: 30px;
+}
+header .header_wrapper .dropdown-menu {
+  background: #212529;
+  padding: 0px;
+}
+header .header_wrapper .dropdown-menu .dropdown-item {
+  background: #212529;
+  color: #f2f2f3;
+}
+header .header_wrapper .dropdown-menu .dropdown-item:hover {
+  background: #596065;
+}
+header .header_wrapper .dropdown-menu .dropdown-item a {
+  color: #f2f2f3;
+}
+
+.profileList {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.profileList .list {
+  width: 200px;
+  background: #292f35;
+  border-radius: 7px;
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  z-index: 15;
+}
+.profileList .list ul {
+  display: flex;
+  flex-direction: column;
+  gap: -10px;
+}
+.profileList .list ul li {
+  padding: 10px 10px;
+  list-style: none;
+}
+.profileList .list ul li a {
+  font-size: 15px;
+  font-weight: 200;
+  color: #f2f2f3;
+}
+.profileList .list ul li a:hover {
+  text-decoration: none;
+}
+
+.dot {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.dot .listDot {
+  width: 170px;
+  background: #292f35;
+  border-radius: 7px;
+  position: absolute;
+  top: 27px;
+  left: 3px;
+  z-index: 15;
+}
+.dot .listDot ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.dot .listDot ul li {
+  padding: 10px 10px;
+}
+.dot .listDot ul li a {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.listAddTitle {
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+.listAddTitle .listTitle {
+  width: 180px;
+  background: #292f35;
+  border-radius: 7px;
+  position: absolute;
+  top: 24px;
+  left: -130px;
+  z-index: 15;
+}
+.listAddTitle .listTitle ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.listAddTitle .listTitle ul li {
+  padding: 10px 10px;
+  list-style: none;
+  transition: all 0.2s ease-in-out;
+}
+.listAddTitle .listTitle ul li:hover {
+  background: #3f4448;
+}
+.listAddTitle .listTitle ul li a {
+  font-size: 15px;
+  font-weight: 200;
+  text-decoration: none;
+  color: #d9d7d7;
+  transition: all 0.1s ease-in-out;
+  text-align: center;
+}
+.listAddTitle .listTitle ul li a img {
+  width: 10px;
+}
+.listAddTitle .listTitle ul li a:hover {
+  color: #f2f2f3;
+}
+
+.listNotificatio {
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+.listNotificatio .modalTitles {
+  width: 460px;
+  background: #292f35;
+  border-radius: 7px;
+  position: absolute;
+  top: 24px;
+  right: -10px;
+  z-index: 15;
+}
+.listNotificatio .modalTitles .options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.listNotificatio .modalTitles .options button {
+  background: #292f35;
+}
+.listNotificatio .modalTitles .options h2 {
+  color: #f2f2f3;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 7px;
+}
+.listNotificatio .modalTitles .buttonsNotification {
+  gap: 5px;
+}
+.listNotificatio .modalTitles .buttonsNotification button {
+  background: #292f35;
+  color: #596065;
+  border-radius: 0px;
+  border-bottom: 1px solid #ffa332;
+}
+.listNotificatio .modalTitles .buttonsNotification button:hover {
+  color: #f2f2f3;
+  background: transparent;
+}
+.listNotificatio .modalTitles .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.listNotificatio .modalTitles .cards .card {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding: 7px;
+  background: #292f35;
+  border: none;
+}
+.listNotificatio .modalTitles .cards .card .leftNotification a {
+  width: 150px;
+}
+.listNotificatio .modalTitles .cards .card .leftNotification a img {
+  width: 50px;
+}
+.listNotificatio .modalTitles .cards .card p {
+  color: #596065;
+}
+.listNotificatio .modalTitles .cards .card a {
+  color: #f2f2f3;
+  font-size: 14px;
+  font-weight: 500;
+}
+.listNotificatio .modalTitles .cards p {
+  color: #f2f2f3;
+}
+.listNotificatio .modalTitles .cards .title {
+  display: flex;
+  flex-direction: row;
+}
+.listNotificatio .modalTitles .cards .title p {
+  color: #f2f2f3;
+}
+.listNotificatio .modalTitles .cards .title a {
+  color: #f2f2f3;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.inputList {
+  transition: all 0.2s ease-in-out;
+}
+.inputList .btnInput_block {
+  width: 600px;
+  border-radius: 7px;
+  position: absolute;
+  top: 10px;
+  right: 480px;
+  z-index: 15;
+}
+.inputList .btnInput_block input {
+  width: 600px;
+  padding: 7px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.inputList .btnInput_block img {
+  position: absolute;
+  left: 40px;
+}
+.inputList .btnInput_block .btns {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.inputList .btnInput_block .btns button {
+  width: 100px;
+  font-size: 14px;
+  background: #3f4448;
+  padding: 1px 1px;
+  text-align: end;
+  border: none;
+  border-radius: 5px;
+}
+.inputList .btnInput_block .btns button:nth-child(5) {
+  position: relative;
+}
+.inputList .btnInput_block .btns button:hover {
+  background: #ffa332;
+}/*# sourceMappingURL=header.css.map */

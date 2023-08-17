@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Montserrat:ital,wght@0,200;0,400;0,700;1,500&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,300;1,500;1,700&family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main {
+    max-width:1536px;
+    background: #1b1b1b;
+    // background: #00000074;
+     
+    padding-left: 180px;
+    padding-bottom: 10px;
+    .profileInfo {
+        // margin-top: 8px ;
+        background:#212529 ;
+        width: 1170px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        // padding-top: 20px;   
+        .profile_Info-right {
+            padding: 12px;
+            img  {
+                width: 70px;
+                border: none;
+                border-radius: 8px;
+            }
+        }
+        .profile_Info-left {
+             display: flex;
+             flex-direction: column;
+             gap: 0px;                      
+            p {
+                // padding: 12px;
+                font-size: 15px;
+                color:#f2f2f3 ;
+            }
+            .profile_Info-options {
+                width: 1070px;
+                display: flex;
+                flex-direction: column;
+                // justify-content: space-between
+                align-items: center;
+                p {
+                    font-size: 14px;
+                    color: #f2f2f3;
+                }
+                button {
+                    padding: 0px 8px;
+                    background:  #40464d;
+                    border: none;
+                    border-radius: 8px;
+                    color: #BABBBD;
+                }
+            }
+        }
+        // border-bottom: 1px solid #40464d;
+    }
+    .title_list  {
+        padding: 18px;
+        width: 940px;
+        input {
+            padding: 7px 12px;
+            width: 940px;
+            background: #212529;
+            border:1px solid #40464d;
+            border-radius: 6px;
+            color: #f2f2f3  ;
+        }
+        .cards {
+            width: 940px;
+            .card {
+                background: #212529;
+                width: 940px;
+                // padding-top: 10px;
+                padding-left: 10px;
+                 display: flex;
+                 flex-direction: row;
+                 border-bottom: 1px solid #ffa332;
+                 align-items: center;
+                 justify-content: space-between;
+                 img {
+                     width: 60px;
+                 }
+                 .LrBlock {
+                    display: flex;
+                    flex-direction: row;
+                    padding-top: 5px    ;
+                    .left {
+                        // padding-top:23px ;
+                        padding-left: 10px;
+                        padding-bottom: 8px;
+                        display: flex;
+                        flex-direction: column;
+                        a {
+                            color: #f2f2f3  ;
+                            &:hover {
+                                color:#ffa332 ;
+                                text-decoration: underline;
+                            }
+                        }
+                        p {
+                            color: #60676f;
+                            // margin-bottom: 6px;
+                        }
+                        a {
+                            // margin-top: 8px;
+                            color: #f2f2f3;
+                        }
+                    } 
+                }
+                .buttonBlock {
+                    padding-top: 58px ;
+                    // padding-left: 200px ;
+                    button {
+                        background: #40464d;
+                        border:1px solid #141617;
+                        border-radius: 8px;
+                        color: #f2f2f3;
+                        width: 100px;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
